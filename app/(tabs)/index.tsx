@@ -1,18 +1,12 @@
-import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
-const About = () => {
+export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hi, I'm the about page</Text>
-      <Link href="/" style={styles.link}>
-        Home
-      </Link>
+      <Text style={styles.title}>Hi, This is home page</Text>
     </View>
   );
-};
-
-export default About;
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -30,7 +24,6 @@ const styles = StyleSheet.create({
     padding: 10,
     cursor: "pointer",
   },
-
   link: {
     fontSize: 20,
     fontWeight: "bold",
