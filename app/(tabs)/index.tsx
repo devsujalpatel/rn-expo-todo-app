@@ -16,14 +16,12 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#1d1d1d",
     alignItems: "center",
     justifyContent: "center",
   },
   title: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "white",
     marginBottom: 20,
     textAlign: "center",
     padding: 10,
