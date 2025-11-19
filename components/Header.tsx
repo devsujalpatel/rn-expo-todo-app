@@ -35,7 +35,7 @@ const Header = () => {
           </Text>
         </View>
       </View>
-      {true && ( // TODO: change true to totalCount > 0
+      {totalCount > 0 && ( // TODO: change true to totalCount > 0
         <View style={homeStyles.progressContainer}>
           <View style={homeStyles.progressBarContainer}>
             <View style={homeStyles.progressBar}>
