@@ -1,9 +1,10 @@
 import { useTheme } from "@/hooks/useTheme";
-import IonIcons from "@expo/vector-icons/Ionicons";
+import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
 const TabsLayout = () => {
   const { colors } = useTheme();
+
   return (
     <Tabs
       screenOptions={{
@@ -13,8 +14,9 @@ const TabsLayout = () => {
           backgroundColor: colors.surface,
           borderTopWidth: 1,
           borderTopColor: colors.border,
-          height: 80,
-          padding: 10,
+          height: 90,
+          paddingBottom: 30,
+          paddingTop: 10,
         },
         tabBarLabelStyle: {
           fontSize: 12,
@@ -28,7 +30,7 @@ const TabsLayout = () => {
         options={{
           title: "Todos",
           tabBarIcon: ({ color, size }) => (
-            <IonIcons size={size} color={color} name="flash-outline" />
+            <Ionicons name="flash-outline" size={size} color={color} />
           ),
         }}
       />
@@ -37,7 +39,7 @@ const TabsLayout = () => {
         options={{
           title: "Settings",
           tabBarIcon: ({ color, size }) => (
-            <IonIcons size={size} color={color} name="settings" />
+            <Ionicons name="settings" size={size} color={color} />
           ),
         }}
       />
